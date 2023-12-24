@@ -1,0 +1,26 @@
+.m-scroll {
+    overflow: hidden;
+    margin-top: -100px;
+    background-color:#f0a754 ;
+  }
+  .m-scroll__title {
+    white-space: nowrap;
+    animation: marquee 22s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .no-underline {
+    text-decoration: none; 
+    color: black; 
+    font-size: 20px;
+  }
+  .increase-font-size{
+font-size: 20px;
+  }

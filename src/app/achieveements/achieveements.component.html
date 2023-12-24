@@ -1,0 +1,124 @@
+<!-- <title>Achievement in Commerce, Science & Arts</title>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="top-image">
+        <img src="../../assets/img7.jpg" alt="Top Image">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="content">
+        <h2>Achievement in Class III To X and Computer Programming</h2>
+        <p>
+          We the SKS Studdy Tonic have been strongly recognized by the Peoples as an Unchallenged & Branded
+          educational Institution in BBSR, Odisha to promote education under BSE and CBSE for Class III To X 
+          with Professional Courses of Spoken English and Computer Programming.We are sincerely shaping the 
+          future dreams of the challenging students who can accept challenges in the world of uncertainty.
+          We would like to inform that we produce prominent Chartered Accountants under our guidance who 
+          are unbeatable in their fields.
+        </p>
+        <p>
+          We have been popularly accepted by the students since 2016 in the sphere of education for our
+          sincere effort in promoting their talent and intelligence which has been regularly judged by the
+          State Govt. in awarding Laptops to our students every year and hence we are getting Greetings with
+          Best wishes from the students and parents.
+        </p>
+        <p>
+          We feel proud in conveying our best wishes to our achievers since long who must be steering in the
+          pilot's seat in their profession.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="right-image">
+        <img src="../../assets/img8.jpg" alt="Right Side Image">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" *ngFor="let data of years; let i = index">
+  <div class="col-md-12">
+    <div class="year-section" (click)="toggleYearContent(i)">
+      <h2>{{data}}</h2>
+    </div>
+    <div class="container" [ngClass]="{ 'hidden': activeIndex !== i }">
+      <div class="row">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-2" *ngFor="let data of images; let i = index">
+          <div class="card">
+            <img class="card-img-top" [src]="data" alt="Bologna" height="130px">
+            <div class="card-body">
+              <h4 class="card-title">{{ names[i % names.length] }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="top-image">
+        <img src="../../assets/img7.jpg" alt="Top Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="content">
+        <h2>Achievement in Class III To X and Computer Programming</h2>
+        <p>
+          We the SKS Studdy Tonic have been strongly recognized by the Peoples as an Unchallenged & Branded
+          educational Institution in BBSR, Odisha to promote education under BSE and CBSE for Class III To X 
+          with Professional Courses of Spoken English and Computer Programming.We are sincerely shaping the 
+          future dreams of the challenging students who can accept challenges in the world of uncertainty.
+          We would like to inform that we produce prominent Chartered Accountants under our guidance who 
+          are unbeatable in their fields.
+        </p>
+        <p>
+          We have been popularly accepted by the students since 2016 in the sphere of education for our
+          sincere effort in promoting their talent and intelligence which has been regularly judged by the
+          State Govt. in awarding Laptops to our students every year and hence we are getting Greetings with
+          Best wishes from the students and parents.
+        </p>
+        <p>
+          We feel proud in conveying our best wishes to our achievers since long who must be steering in the
+          pilot's seat in their profession.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="right-image">
+        <img src="../../assets/img8.jpg" alt="Right Side Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Your Angular content for year sections here -->
+<div class="container">
+  <div class="row" *ngFor="let data of years; let i = index">
+    <div class="col-md-12">
+      <div class="year-section" (click)="toggleYearContent(i)">
+        <h2>{{data}}</h2>
+      </div>
+      <div class="container" [ngClass]="{ 'hidden': activeIndex !== i }">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" *ngFor="let image of images; let j = index">
+            <div class="card">
+              <img class="card-img-top" [src]="image" alt="Bologna" height="130px" id="img-fluid">
+              <div class="card-body">
+                <h4 class="card-title">{{ names[j % names.length] }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

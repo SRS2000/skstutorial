@@ -1,0 +1,13 @@
+#carouselExampleSlidesOnly {
+    height: 600px;
+  }
+  
+  .carousel-inner {
+    .carousel-item {
+      img {
+        height: 500px; 
+        width: 100%; 
+        object-fit: cover; 
+      }
+    }
+  }

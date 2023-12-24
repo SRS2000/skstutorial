@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+  }
+  
+  h1{
+    text-align:center;
+    margin:60px;
+    font-family: 'Edu TAS Beginner',cursive; 
+  }
+  
+  .gallery{
+    margin:30px auto;
+    justify-content:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap: 20px; 
+  }
+  
+  img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+  }
+  
+  img:hover{ 
+    transform: scale(1.5);
+    transition-duration:1s;
+    border-radius:5%;
+    border:1px solid green;
+    box-shadow:1px 1px 10px green;
+  }

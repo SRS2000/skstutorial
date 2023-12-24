@@ -1,0 +1,85 @@
+.content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  /* Style the image containers */
+  .top-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .year-section {
+    margin-top: 6px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-top: none; /* Remove top border */
+    background-color: gray;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+  }
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// 🔥 Fun stuff starts here
+// Initial styles for an item
+.content .item {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid rgb(255, 247, 247);
+  transition: all 400ms ease-out;
+}
+.content .item img {
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+// Styles of the items that do not have a focus or hover
+.content:has(.item:focus) .item:not(:focus),
+.content:has(.item:hover) .item:not(:hover) {
+  opacity: 0.1;
+  scale: 0.92;
+}
+
+// Styles of the item with focus or hover
+.content .item:focus,
+.content .item:hover {
+  box-shadow: 0px 0px 24px 4px rgba(112, 112, 112, 0.7);
+  transition: all 300ms ease-out;
+}
+.card {
+  margin-bottom: 20px; /* Adjust the margin between cards */
+}
+.right-image img{
+  height: 470px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 576px) {
+  #img-fluid{
+    height: 130px !important;
+  }
+}
